@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 15px;
+    background-color: #1e1e1e;
+}
+
+header {
+    margin: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    background-color: black;
+}
+
+.nav__header, .logo__header {
+    margin-left: 200px;
+}
+
+
+.ul__nav {
+    display: flex;
+    gap: 40px;
+}
+
+.logoTO {
+    width: 80px;
+    filter: brightness() invert(1);
+    transition: 300ms ease-out;
+}
+
+.list__nav {
+    padding: 20px 10px 20px 20px;
+    padding-left: 20px;
+    list-style: none;
+    border-radius: 3px;
+    transition: 300ms ease-out;
+}
+
+.a__nav {
+    text-decoration: none;
+    color: white;
+}
+
+.logoTO:hover {
+    transform: scale(1.1);
+    transition: 300ms ease-in;
+}
+
+.list__nav:hover {
+    transform: scale(1.1);
+    transition: 300ms ease-in;
+    background-color: #000000;
+    border-left: 1px solid rgb(192, 192, 192);
+    border-right: 1px solid rgb(192, 192, 192);
+}
+
+#h2__TO {
+    font-family: "Allura", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    text-shadow: 5px 3px 20px  rgb(254, 246, 155);
+}
+
+.video__section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.video__container {
+  position: relative; /* referencia para el overlay */
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.background__video {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* el video cubre todo sin deformarse */
+  filter: brightness(0.6);
+  display: block;
+}
+
+.video__overlay {
+  position: absolute; /* se posiciona encima del video */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* lo centra */
+  color: rgb(253, 253, 253);
+  text-align: center;
+  z-index: 2; /* asegura que quede por encima */
+}
+
+
+.video__overlay p {
+    color: #d6d6d6;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  text-shadow: 5px 3px 20px  rgb(255, 244, 173);
+}
+
+main {
+    background: linear-gradient(#434343, #000000);
+}
+
+.section__1 {
+  margin: 100px;
+  border-top: 2px solid transparent;
+  border-image: linear-gradient(90deg, #B8860B, #FFD700, #FFA500, #FFF8DC, #FFD700, #B8860B);
+  border-image-slice: 1;
+
+}
+.muestra__cirugias {
+    width: 200px;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px  rgb(255, 243, 177);
+    transition: 300ms;
+}
+
+.muestra__cirugias:hover {
+    transform: scale(1.1);
+    transition: 300ms;
+}
+
+.div__s1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.h3__s1 {
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 3px 20px  rgb(255, 240, 184);
+}
+
+#span__s1 {
+    display: block;
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+.centro-pantalla {
+  display: flex;                /* Activamos flexbox */
+  justify-content: center;      /* Centrado horizontal */
+  align-items: center;          /* Centrado vertical */
+  height: 30vh;                /* Altura de toda la pantalla */
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  background-color: #aeaeae;    /* Verde WhatsApp */
+  color: rgb(13, 13, 13);
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  background: linear-gradient(90deg, #B8860B, #FFD700, #FFA500, #FFF8DC, #FFD700, #B8860B);
+
+}
+
+.btn-whatsapp:hover {
+  transform: scale(1.05);
+  transition: 300ms;
+}
+
+/*Aqui comienza la parte de los productos*/
+
+.seccion-productos {
+    margin: 100px;
+  padding: 10px 20px;
+  text-align: center;
+  border-top: 2px solid transparent;
+  border-image: linear-gradient(90deg, #B8860B, #FFD700, #FFA500, #FFF8DC, #FFD700, #B8860B);
+  border-image-slice: 1;
+}
+
+
+.galeria-productos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.producto {
+  position: relative;
+  width: 200px; /* Ajusta tamaño de cada imagen */
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.producto img {
+  width: 100%;
+  display: block;
+  transition: 0.3s ease;
+}
+
+.producto:hover img {
+    transform: scale(1.2);
+    transition: 300ms;
+  filter: brightness(50%); /* Atenúa la imagen al pasar el mouse */
+}
+
+.descripcion {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0; /* Inicialmente invisible */
+  transition: opacity 0.3s ease;
+  padding: 10px;
+}
+
+.producto:hover .descripcion {
+  opacity: 1; /* Se muestra al pasar el mouse */
+}
+
+/*Esta es la parte de las redes sociales*/
+
+.redes__sociales {
+  padding: 10px 20px;
+  background-color: #151515;
+}
+
+.contenedor__redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; /* Espacio entre imagen y texto */
+  flex-wrap: wrap; /* Para que se acomode en pantallas pequeñas */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.img__principal {
+  width: 250px;
+  max-width: 100%;
+}
+
+.info__redes {
+  text-align: left;
+}
+
+
+.iconos__redes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.img__redes {
+    filter: brightness(0) invert(1);
+  width: 30px;
+  transition: transform 0.3s ease;
+}
+
+.img__redes:hover {
+    border-radius: 50% solid;
+    border-color: white;
+  transform: scale(1.2); /* Efecto al pasar el mouse */
+}
+
+
+/*footer*/
+
+.footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 40px 20px 10px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.footer__col {
+  flex: 1 1 200px;
+}
+
+.footer__col h3,
+.footer__col h4 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+#p__footer {
+    color: #bbb;
+}
+
+.footer__col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__col ul li {
+  margin: 5px 0;
+}
+
+.footer__col ul li a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.footer__col ul li a:hover {
+  color: #ffffff;
+}
+
+.footer__redes {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__redes img {
+  width: 25px;
+  transition: transform 0.3s;
+}
+
+.footer__redes img:hover {
+  transform: scale(1.2);
+}
+
+.footer__logo img {
+  max-width: 120px;
+  filter: brightness(0) invert(1); /* lo pone en blanco si es negro */
+}
+
+.footer__bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+#a__santiago {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* ========================= */
+/* 📱 RESPONSIVIDAD */
+/* ========================= */
+
+/* Tablets (pantallas medianas) */
+@media (max-width: 1024px) {
+  header {
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .nav__header, .logo__header {
+    margin-left: 0;
+  }
+
+  .ul__nav {
+    gap: 20px;
+  }
+
+  .video__container {
+    width: 100%;
+    max-width: 800px;
+  }
+
+  #span__s1 {
+    width: 90%;
+  }
+
+  .div__s1 {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .muestra__cirugias {
+    width: 180px;
+  }
+
+  .galeria-productos {
+    gap: 20px;
+  }
+
+  .contenedor__redes {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info__redes {
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1000;
+  }
+
+  .nav__header {
+    display: none;
+    width: 100%;
+    background: black;
+    text-align: center;
+  }
+
+  .nav__header.active {
+    display: block;
+  }
+
+  .ul__nav {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
+}
+
+
+
+/* Móviles (pantallas pequeñas) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  .ul__nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .video__container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #h2__TO {
+    font-size: 50px;
+  }
+
+  .video__overlay p {
+    font-size: 1rem;
+  }
+
+  .section__1 {
+    margin: 40px 20px;
+  }
+
+  .div__s1 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .muestra__cirugias {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  #span__s1 {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .galeria-productos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .producto {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__logo img {
+    margin-top: 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1000;
+  }
+
+  .nav__header {
+    display: none;
+    width: 100%;
+    background: black;
+    text-align: center;
+  }
+
+  .nav__header.active {
+    display: block;
+  }
+
+  .ul__nav {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
+}
+
+/* Móviles muy pequeños */
+@media (max-width: 480px) {
+  #h2__TO {
+    font-size: 35px;
+  }
+
+  .video__overlay p {
+    font-size: 0.9rem;
+  }
+
+  .btn-whatsapp {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .img__principal {
+    width: 180px;
+  }
+
+  .img__redes {
+    width: 25px;
+  }
+
+  .footer__bottom {
+    font-size: 12px;
+  }
+}
