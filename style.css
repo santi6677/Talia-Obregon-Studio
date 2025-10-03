@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 html {
@@ -8,7 +8,7 @@ html {
 body {
     width: 100%;
     margin: 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Red Hat Display", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 15px;
@@ -69,10 +69,11 @@ header {
 }
 
 #h2__TO {
-    font-family: "Allura", cursive;
-    font-weight: 400;
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
     font-style: normal;
-    font-size: 80px;
+    font-size: 70px;
     text-shadow: 5px 3px 20px  rgb(254, 246, 155);
 }
 
