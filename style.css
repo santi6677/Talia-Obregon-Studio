@@ -547,6 +547,10 @@ main {
     opacity: 1 !important;          /* Texto siempre visible */
   }
 
+  .iconos__redes {
+    padding-bottom: 20px;
+  }
+
   .footer__container {
     flex-direction: column;
     align-items: center;
