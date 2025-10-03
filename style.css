@@ -110,9 +110,9 @@ header {
 
 
 .video__overlay p {
-    color: #d6d6d6;
-  font-size: 1.5rem;
-  margin-top: 10px;
+  color: #d6d6d6;
+  font-size: 1.2rem;
+  margin: 0;
   text-shadow: 5px 3px 20px  rgb(255, 244, 173);
 }
 
@@ -121,7 +121,7 @@ main {
 }
 
 .section__1 {
-  margin: 100px;
+  margin: 50px 100px 10px 100px;
   border-top: 2px solid transparent;
   border-image: linear-gradient(90deg, #B8860B, #FFD700, #FFA500, #FFF8DC, #FFD700, #B8860B);
   border-image-slice: 1;
@@ -152,16 +152,18 @@ main {
     color: #ffffff;
     text-align: center;
     text-shadow: 2px 3px 20px  rgb(255, 240, 184);
+    padding: 10px;
+    margin: 10px;
 }
 
 #span__s1 {
     display: block;
     width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 20px 30px 20px;
     font-size: 15px;
     color: #ffffff;
-    text-align: center;
+    text-align: center; 
     line-height: 1.5;
     box-sizing: border-box;
 }
@@ -170,21 +172,19 @@ main {
   display: flex;                /* Activamos flexbox */
   justify-content: center;      /* Centrado horizontal */
   align-items: center;          /* Centrado vertical */
-  height: 30vh;                /* Altura de toda la pantalla */
+  height: 20vh;                /* Altura de toda la pantalla */
 }
 
 .btn-whatsapp {
   display: inline-block;
-  background-color: #aeaeae;    /* Verde WhatsApp */
-  color: rgb(13, 13, 13);
+  background-color: #585858;    /* Verde WhatsApp */
+  color: rgb(214, 214, 214);
   padding: 12px 25px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
   transition: background-color 0.3s;
-  background: linear-gradient(90deg, #B8860B, #FFD700, #FFA500, #FFF8DC, #FFD700, #B8860B);
-
 }
 
 .btn-whatsapp:hover {
@@ -194,8 +194,17 @@ main {
 
 /*Aqui comienza la parte de los productos*/
 
+.h3__s2 {
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 3px 20px  rgb(255, 240, 184);
+    padding: 10px 10px 50px 10px;
+    margin: 10px;
+}
+
 .seccion-productos {
-    margin: 100px;
+  margin: 10px 100px 10px 100px;
   padding: 10px 20px;
   text-align: center;
   border-top: 2px solid transparent;
@@ -205,6 +214,7 @@ main {
 
 
 .galeria-productos {
+  padding: 0 0 50px 0;
   display: flex;
   justify-content: center;
   gap: 40px;
