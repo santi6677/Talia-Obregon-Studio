@@ -237,8 +237,8 @@ main {
 }
 
 .producto:hover img {
-    transform: scale(1.2);
-    transition: 300ms;
+  transform: scale(1.2);
+  transition: 300ms;
   filter: brightness(50%); /* Atenúa la imagen al pasar el mouse */
 }
 
@@ -426,6 +426,7 @@ main {
   .div__s1 {
     flex-wrap: wrap;
     gap: 20px;
+    align-items: center;
   }
 
   .muestra__cirugias {
@@ -495,6 +496,7 @@ main {
 
   #h2__TO {
     font-size: 50px;
+    font-family: "Red Hat Display", sans-serif;
   }
 
   .video__overlay p {
@@ -505,9 +507,14 @@ main {
     margin: 40px 20px;
   }
 
+  .seccion-productos {
+    margin: 40px 20px;
+  }
+
   .div__s1 {
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
+    align-items: center;
   }
 
   .muestra__cirugias {
@@ -523,11 +530,21 @@ main {
   .galeria-productos {
     flex-direction: column;
     align-items: center;
+    gap: 40px;
   }
 
   .producto {
     width: 90%;
     max-width: 300px;
+  }
+  
+  .producto img {
+    transform: scale(1.2);          /* Igual que hover */
+    filter: brightness(50%);        /* Igual que hover */
+  }
+
+  .descripcion {
+    opacity: 1 !important;          /* Texto siempre visible */
   }
 
   .footer__container {
@@ -593,6 +610,7 @@ main {
 /* Móviles muy pequeños */
 @media (max-width: 480px) {
   #h2__TO {
+    font-family: "Red Hat Display", sans-serif;
     font-size: 35px;
   }
 
